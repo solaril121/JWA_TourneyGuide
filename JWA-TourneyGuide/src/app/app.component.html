@@ -1,0 +1,15 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar primary>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Tournament</a>
+      <a mat-list-item href="#">Current Tournament</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet name="content"></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
