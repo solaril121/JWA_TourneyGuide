@@ -1,0 +1,4 @@
+[
+  {"name": "EpicTournament", "id": "1", "isCurrentTournament": true},
+  {"name": "RareTournament", "id": "2", "isCurrentTournament": false}
+]
